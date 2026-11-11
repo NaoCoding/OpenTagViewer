@@ -7,8 +7,9 @@ env:
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "main", "experiment/apple-login-emulated-mac" ]
     paths:
+      - ".github/workflows/build-debug.yml"
       # only run when Android-related stuff actually changed!
       - "app/**"
       - "gradle/**"
